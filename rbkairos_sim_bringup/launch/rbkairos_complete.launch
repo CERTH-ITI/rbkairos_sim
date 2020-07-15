@@ -4,10 +4,10 @@
     <!-- arg to config the launch file-->
 
     <arg name="launch_rviz" default="true"/>
-    <arg name="gazebo_world" default="$(find rbkairos_gazebo)/worlds/office.world"/>
-    <arg name="default_map" default="willow_garage/willow_garage.yaml"/>
-    <arg name="default_arm_model" default="ur5"/>
-    <arg name="default_gripper_model" default="egh"/>
+    <arg name="gazebo_world" default="$(find hr_recycler_gazebo)/worlds/hr_bianatt_factory.world"/>
+    <arg name="default_map" default="bianatt_factory.yaml"/>
+    <arg name="default_arm_model" default="ur10"/>
+    <arg name="default_gripper_model" default="wsg50"/>
     <arg name="default_xacro" default="versions/rbkairos_$(arg default_arm_model)_$(arg default_gripper_model).urdf.xacro"/>
     <arg name="omni_drive" default="true"/>
     <!-- Needed if using ur_description from fmauch_universal_robot -->
@@ -27,8 +27,8 @@
     <arg name="amcl_and_mapserver_a" default="true"/>
     <arg name="launch_pad_a" default="true"/>
     <!-- spawn position robot a -->
-    <arg name="x_init_pose_robot_a" default="0" />
-    <arg name="y_init_pose_robot_a" default="0" />
+    <arg name="x_init_pose_robot_a" default="5" />
+    <arg name="y_init_pose_robot_a" default="5" />
     <arg name="z_init_pose_robot_a" default="0" />
     <arg name="yaw_init_pose_robot_a" default="0" />
     <!-- arm robot a -->
