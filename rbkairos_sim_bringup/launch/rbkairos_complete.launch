@@ -1,8 +1,6 @@
 <?xml version="1.0"?>
 <launch>
-
     <!-- arg to config the launch file-->
-
     <arg name="launch_rviz" default="true"/>
     <arg name="gazebo_world" default="$(find hr_recycler_gazebo)/worlds/hr_bianatt_factory.world"/>
     <arg name="default_map" default="bianatt_factory.yaml"/>
@@ -15,7 +13,7 @@
     <!-- simulation of motor controllers topics and battery estimation -->
     <arg name="launch_base_hw_sim" default="false"/>
     <arg name="launch_battery_estimator" default="false"/>
-
+		
     <!-- arguments robot a -->
     <arg name="id_robot_a" default="robot"/>
     <arg name="launch_robot_a" default="true"/>
@@ -38,7 +36,7 @@
     <!-- gripper robot a -->
     <arg name="launch_gripper_a" default="true"/>
     <arg name="gripper_model_a" default="$(arg default_gripper_model)"/>
-
+		
     <!-- arguments robot b -->
     <arg name="id_robot_b" default="robot_b"/>
     <arg name="launch_robot_b" default="false"/>
